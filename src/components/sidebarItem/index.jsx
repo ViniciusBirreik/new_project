@@ -1,12 +1,15 @@
 import { Container } from "./style";
+import { NavLink } from "react-router-dom";
 
-export default function SidebarItem({Icon, Text}) {
+export default function SidebarItem({Icon, Text, link}) {
     return (
         <>
-            <Container>
-                <Icon/>
-                {Text}
-            </Container>
+            <NavLink style={{textDecoration: 'none'}} to={link}>
+                <Container>
+                    <Icon/>
+                    {Text}
+                </Container>
+            </NavLink>
         </>
     )
 }

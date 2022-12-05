@@ -1,6 +1,6 @@
 import SidebarItem from "../sidebarItem";
 import { Container, Content} from "./style";
-import { FaHome, FaAngry, FaTimes } from "react-icons/fa";
+import { FaHome, FaTimes, FaUserAlt, FaRegFileAlt } from "react-icons/fa";
 
 export default function Sidebar({ active }) {
     
@@ -11,10 +11,11 @@ export default function Sidebar({ active }) {
     return (
         <>
             <Container sidebar={active}>
-                <FaTimes onClick={CloseSidebar}/>
+                <FaTimes style={{margin: '10px'}} onClick={CloseSidebar}/>
                 <Content>
-                    <SidebarItem Icon={FaHome} Text={'Home'}/>
-                    <SidebarItem Icon={FaAngry} Text={'Angry'}/>
+                    <SidebarItem Icon={FaHome} Text={'Home'} link={'/'} />
+                    <SidebarItem Icon={FaUserAlt} Text={'Login'} link={'/login'}/>
+                    <SidebarItem Icon={FaRegFileAlt} Text={'Reports'} link={'/reports'}/>
                 </Content>
             </Container>
         </>

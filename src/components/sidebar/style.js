@@ -8,7 +8,7 @@ export const Container = styled.div`
     left: 0;
     width: 300px;
     left: ${props => props.sidebar ? '0' : '-100%'};
-    animation: ShowSIdebar .4s;
+    animation: ShowSidebar .4s;
 
     svg > {
         width: 30px;
@@ -20,7 +20,7 @@ export const Container = styled.div`
         cursor: pointer;
     }
 
-    @keyframes ShowSIdebar {
+    @keyframes ShowSidebar {
         from {
             opacity: 0;
             width: 0;

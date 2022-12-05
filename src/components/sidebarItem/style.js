@@ -5,11 +5,13 @@ export const Container = styled.div`
     align-items: center;
     font-size: 20px;
     color: white;
-    padding: 20px;
+    padding: 10px;
     cursor: pointer;
-    //border-radius: ;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 70px;
 
-    svg > {
+    > svg {
         margin: 0 20px;
     }
 
