@@ -9,7 +9,8 @@ export const Container = styled.div`
     cursor: pointer;
     border-radius: 10px;
     margin-top: 15px;
-    margin-left: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     > svg {
         margin: 0 20px;
@@ -17,5 +18,6 @@ export const Container = styled.div`
 
     &:hover {
         background-color: black;
+        transition-duration: 0.3s;
     }
 `;

@@ -4,10 +4,9 @@ export const Conteiner = styled.div`
     height: 100px;
     display: flex;
     box-shadow: 0 0 20px 3px;
-    background-color: #1a202c;
+    background-color: #096CA8;
 
     > svg {
-        position: fixed;
         color: white;
         width: 30px;
         height: 30px;
