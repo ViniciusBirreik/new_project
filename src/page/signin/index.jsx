@@ -8,7 +8,7 @@ import * as C from "./style";
 export default function Signin() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-
+    const [error, setError] = useState('');
     
     return (
         <>
@@ -19,14 +19,15 @@ export default function Signin() {
                     type='email' 
                     placeholder='e-mail' 
                     value={email} 
-                    onChange={(e) => setEmail(e.target.value)}>
+                    onChange={(e) => [setEmail(e.target.value), setError('')]}>
                 </Input>
                 <Input 
                     type='passowrd' 
                     placeholder='password' 
                     value={password} 
-                    onChange={(e) => setPassword(e.target.value)}>
+                    onChange={(e) => [setPassword(e.target.value), setError('')]}>
                 </Input>
+                <label>{error}</label>
                 <Button Text={'login'}></Button>
             </C.Container>
         </>
